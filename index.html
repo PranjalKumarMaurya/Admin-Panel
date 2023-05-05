@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                    <h2>Super<span class="danger">Weeps</span></h2>
+                </div>
+                <div class="close" id="close-button">
+                    <i class="ph ph-x"></i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="">
+                    <i class='bx bxs-dashboard'></i>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="">
+                    <i class='bx bxs-user' ></i>
+                    <h3>Customers</h3>
+                </a>
+                <a href="">
+                    <i class="ph ph-note"></i>
+                    <h3>Orders</h3>
+                </a>
+                <a href="">
+                    <i class='bx bx-stats' ></i>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="">
+                    <i class="ph ph-paper-plane-tilt"></i>
+                    <h3>Messsages</h3>
+                </a>
+                <a href="">
+                    <i class="ph ph-note-pencil"></i>
+                    <h3>Products</h3>
+                </a>
+                <a href="">
+                    <i class="ph ph-info"></i>
+                    <h3>Reports</h3>
+                </a>
+                <a href="">
+                    <i class="ph ph-gear-six"></i>
+                    <h3>Settings</h3>
+                </a>
+                <a href="">
+                    <i class='bx bx-plus-medical' ></i>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="">
+                    <i class="ph ph-sign-out"></i>
+                    <h3>Sign Out</h3>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <i class="ph ph-chart-bar"></i> 
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <div class="expenses">
+                    <i class="ph ph-currency-dollar"></i> 
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$14,160</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <div class="income">
+                    <i class="ph ph-money"></i> 
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$10864</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+            </div>
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zoro oversize hoodie</td>
+                            <td>12871</td>
+                            <td>Complete</td>
+                            <td>Dispatched</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Luffy regular tshirt</td>
+                            <td>15932</td>
+                            <td>Complete</td>
+                            <td>Packed</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Rengoku oversize tshirt</td>
+                            <td>14576</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Asta oversize tshrit</td>
+                            <td>14851</td>
+                            <td>Complete</td>
+                            <td>Dispatched</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Black puffy trousers</td>
+                            <td>13774</td>
+                            <td>Due</td>
+                            <td class="warning">pending</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Regular beige tshirt</td>
+                            <td>15859</td>
+                            <td>Complete</td>
+                            <td>Dispatched</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Naruto pullover</td>
+                            <td>16879</td>
+                            <td>Complete</td>
+                            <td>Packed</td>
+                            <td><a class="primary" href="">details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="" class="show-more primary">Show More</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <button id="menu-button">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="theme-toggler">
+                    <i class="active ph ph-sun-dim"></i>
+                    <i class="ph ph-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Pranjal</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Recent updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <p><b>Mike Tyson </b>receieved his order of Nami oversize tshirt.</p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <p><b>Diana ayi </b>receieved his order of Zoro oversize tshirt.</p>
+                            <small class="text-muted">7 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <p><b>Mandy Roy </b>receieved his order of Naruto oversize tshirt.</p>
+                            <small class="text-muted">12 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-analytics">
+                <h2>Sales Analytics</h2>
+                <div class="analytics">
+                    <div class="item online">
+                        <i class="ph ph-shopping-cart"></i>
+                        <div class="item-info">
+                            <div class="head">
+                                <h3>Online Orders</h3>
+                                <small class="text-muted">Last 24 hours</small>
+                            </div>
+                            <h5 class="success">+39%</h5>
+                            <h3>3849</h3>
+                        </div>
+                    </div>
+                    <div class="item ofline">
+                        <i class="ph ph-handbag"></i>
+                        <div class="item-info">
+                            <div class="head">
+                                <h3>Ofline Orders</h3>
+                                <small class="text-muted">Last 24 hours</small>
+                            </div>
+                            <h5 class="success">-19%</h5>
+                            <h3>1100</h3>
+                        </div>
+                    </div>
+                    <div class="item customers">
+                        <i class="ph ph-user"></i>
+                        <div class="item-info">
+                            <div class="head">
+                                <h3>New Customers</h3>
+                                <small class="text-muted">Last 24 hours</small>
+                            </div>
+                            <h5 class="success">+25%</h5>
+                            <h3>2276</h3>
+                        </div>
+                    </div>
+                    <div class="item products">
+                       <div>
+                        <i class="ph ph-plus"></i>
+                        <h3>Add Products</h3>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Javascript/main.js"></script>
+
+</body>
+</html>
